@@ -8,7 +8,7 @@ sequence = []
 
 # calculating second moment / вычисление второго момента
 def calculate_second_moment(seq):
-    c = Counter(sequence)
+    c = Counter(seq)
     return sum(v ** 2 for v in c.values())
 
 
@@ -55,7 +55,3 @@ print('1st moment: ', m[1])
 print('2nd moment: ', second_moment)
 print('2nd moment by Alon-Matias-Szegedy from 500: ', m[2])
 print('Difference: ', abs(second_moment - m[2]))
-
-
-
-
